@@ -1,4 +1,6 @@
-﻿namespace C_Advanced01
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace C_Advanced01
 {
     internal class Program
     {
@@ -42,8 +44,38 @@
 
             #endregion
 
+            #region (Q7) struct constraint
+
+            // struct: Type argument must be a value type.
+            //     EX: public class MaxValue<T> where T : struct { };
+
+            #endregion
+
+
+            #region (Q8) class constraint
+
+            // class: Type argument must be a reference type.
+            //     EX: public class Repo<T> where T : class {};
+
+            #endregion
+
+
+            #region (Q9) new() constraint
+
+            // new(): Type argument must have a public parameterless constructor.
+            //     EX: public class Factory<T> where T : new() => new T() {};
+
+            #endregion
+
+
+
+
 
         }
+
+
+
+
 
 
         // Q4
