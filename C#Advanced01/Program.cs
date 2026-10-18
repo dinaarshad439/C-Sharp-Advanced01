@@ -99,6 +99,24 @@ namespace C_Advanced01
 
             #endregion
 
+            #region (Q14) Create safeList class and return default in generics.
+
+            SafeList<int> numbers = new SafeList<int>();
+
+            numbers.Add(10);
+            numbers.Add(20);
+            numbers.Add(30);
+
+            Console.WriteLine($"Item at index 1: {numbers.Get(1)}"); 
+
+          
+            int invalidItem = numbers.Get(5);
+            Console.WriteLine($"Item at index 5: {invalidItem}");
+
+
+
+            #endregion
+
 
 
 
