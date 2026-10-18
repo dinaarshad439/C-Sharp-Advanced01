@@ -31,10 +31,14 @@
 
             #region (Q5) Calling Find Max
 
-            int[] arr = { 10, 20, 100, 50 };
-            FindMax<int>(arr);
+            //int[] arr = { 10, 20, 100, 50 };
+            //FindMax<int>(arr);
 
-           
+            #endregion
+
+            #region (Q6) Generics Interface
+
+            // Generic interface is interface designed to handle any data type. 
 
             #endregion
 
