@@ -11,6 +11,12 @@
 
             #endregion
 
+            #region (Q3) Multiple type Parameter
+
+            //Means that we can add more than one generic type.
+
+            #endregion
+
 
         }
     }
