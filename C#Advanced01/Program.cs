@@ -78,8 +78,15 @@ namespace C_Advanced01
 
             #region (Q11) Base Class constraint
 
-            // new(): Type argument must have a public parameterless constructor.
+            // Base Class: Type argument must inherit from a specific base class.
             //     EX: public class FindMax<T> where T : BaseEntity {};
+
+            #endregion
+
+            #region (Q12) applying multiple constraints
+
+            // Multiple constraints: Combine multiple constraints.
+            //     EX: public class FindMax<T> where T : class, IEntity, new() {};
 
             #endregion
 
