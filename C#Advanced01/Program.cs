@@ -55,7 +55,7 @@ namespace C_Advanced01
             #region (Q8) class constraint
 
             // class: Type argument must be a reference type.
-            //     EX: public class Repo<T> where T : class {};
+            //     EX: public class FindMax<T> where T : class {};
 
             #endregion
 
@@ -63,7 +63,23 @@ namespace C_Advanced01
             #region (Q9) new() constraint
 
             // new(): Type argument must have a public parameterless constructor.
-            //     EX: public class Factory<T> where T : new() => new T() {};
+            //     EX: public class FindMax<T> where T : new() => new T() {};
+
+            #endregion
+
+
+            #region (Q10) Interface constraint
+
+            // Interface: Type argument must implement a specific interface.
+            //     EX: public class FindMax<T> where T : IComparable<T> {};
+
+            #endregion
+
+
+            #region (Q11) Base Class constraint
+
+            // new(): Type argument must have a public parameterless constructor.
+            //     EX: public class FindMax<T> where T : BaseEntity {};
 
             #endregion
 
