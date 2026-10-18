@@ -154,13 +154,14 @@ namespace C_Advanced01
 
             #endregion
 
-
             #region (Q19) Inheritance in generics
 
             // A generic class can inherit from another generic or non-generic class, 
             // If the base class is generic, the derived class must either specify the type argument or pass its own generic parameter.
 
             #endregion
+
+
 
 
         }
