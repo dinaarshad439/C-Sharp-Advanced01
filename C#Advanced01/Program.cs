@@ -137,13 +137,28 @@ namespace C_Advanced01
 
             #region (Q17) Covariance vs Contravariance 
 
-             // Covariance(out): Allows you to use a more derived type than originally specified.
-             // Used in generic interfaces for output positions (return types).
+            // Covariance(out): Allows you to use a more derived type than originally specified.
+            // Used in generic interfaces for output positions (return types).
             // Example: IEnumerable <out T >.
 
             //Contravariance(in): Allows you to use a less derived type.
             //Used for input positions (method parameters).
             //Example: IAction <in T >.
+
+            #endregion
+
+            #region (Q18) Static members in generics
+
+            //Each unique closed generic type and has its own separate set of static fields.
+            //They are not shared across different type arguments.
+
+            #endregion
+
+
+            #region (Q19) Inheritance in generics
+
+            // A generic class can inherit from another generic or non-generic class, 
+            // If the base class is generic, the derived class must either specify the type argument or pass its own generic parameter.
 
             #endregion
 
