@@ -99,26 +99,53 @@ namespace C_Advanced01
 
             #endregion
 
+
             #region (Q14) Create safeList class and return default in generics.
 
-            SafeList<int> numbers = new SafeList<int>();
+            //SafeList<int> numbers = new SafeList<int>();
 
-            numbers.Add(10);
-            numbers.Add(20);
-            numbers.Add(30);
+            //numbers.Add(10);
+            //numbers.Add(20);
+            //numbers.Add(30);
 
-            Console.WriteLine($"Item at index 1: {numbers.Get(1)}"); 
+            //Console.WriteLine($"Item at index 1: {numbers.Get(1)}"); 
 
-          
-            int invalidItem = numbers.Get(5);
-            Console.WriteLine($"Item at index 5: {invalidItem}");
+
+            //int invalidItem = numbers.Get(5);
+            //Console.WriteLine($"Item at index 5: {invalidItem}");
 
 
 
             #endregion
 
 
+            #region (Q15) Covariance definition
 
+            // Covariance(out): Allows you to assign a generic type with a derived class to a variable expecting a base class.
+            //Uses the out keyword, which restricts the generic type to output positions only (such as method return types)
+
+            #endregion
+
+
+            #region (Q16) Contravariance definition
+
+            //Contravariance(in):The opposite of covariance; it allows you to use a base class type where a derived class type is expected.
+            //Uses the in keyword, which restricts the generic type to input positions only (such as method parameters).
+
+            #endregion
+
+
+            #region (Q17) Covariance vs Contravariance 
+
+             // Covariance(out): Allows you to use a more derived type than originally specified.
+             // Used in generic interfaces for output positions (return types).
+            // Example: IEnumerable <out T >.
+
+            //Contravariance(in): Allows you to use a less derived type.
+            //Used for input positions (method parameters).
+            //Example: IAction <in T >.
+
+            #endregion
 
 
         }
