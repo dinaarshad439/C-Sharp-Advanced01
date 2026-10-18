@@ -83,10 +83,19 @@ namespace C_Advanced01
 
             #endregion
 
+
             #region (Q12) applying multiple constraints
 
             // Multiple constraints: Combine multiple constraints.
             //     EX: public class FindMax<T> where T : class, IEntity, new() {};
+
+            #endregion
+
+
+            #region (Q13) Default Keyword in Generics
+
+            // default keyword produces the default value of a type if data type is reference type then default is null and
+            // if data type is value type then default is zero.
 
             #endregion
 
